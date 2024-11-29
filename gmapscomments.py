@@ -84,12 +84,12 @@ class GoogleMapsComments:
                     pbar.update(10)
 
                 else:
-                    print('Нету нихуя!!!')
+                    print('error. no content')
                 if len(comments) >= number:
                     break
                 time.sleep(1)
         except Exception:
-            print('ОШИБКА В БЛОКЕ!!!')
+            print('Ошибка в блоке!')
             traceback.print_exc()
 
         finally:
